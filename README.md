@@ -18,11 +18,9 @@ Passionate about financial analysis, automation, and data-driven decision-making
 **Finance Reporting Analyst @ Funding Metrics (_September 2021 - Present_)**
 - Automated key operational processes, including report creation, calculations, and data collection, using Excel, Salesforce, and Google Sheets, increasing team efficiency by **25%**.
 - Developed real-time dashboards in Salesforce, Power BI, and Excel, enabling senior management to make data-driven decisions throughout the month.
-- Implemented automated reporting solutions across multiple departments, shifting decision-making from intuition to **data-driven strategies**, improving financial performance.
 
 **Pre-Approval and Bank Verification Review Supervisor @ Funding Metrics (_June 2018 - September 2021_)**
 - Managed the underwriting process for business cash advances, analyzing financial reports, bank statements, and credit reports.
-- Conducted risk and fraud analysis by reviewing legal documents, tax reports, and identity documentation, increasing fraud detection accuracy by **25%**.
 - Generated pre-approval offers through detailed analysis of bank statements and financial data, streamlining the approval process.
 
 **Underwriter @ IBM (_June 2017 - June 2018_)**  
