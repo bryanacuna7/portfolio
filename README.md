@@ -37,7 +37,13 @@ Passionate about financial analysis, automation, and data-driven decision-making
 🌱 Currently learning advanced data visualization techniques and exploring deeper into data science.
 
 ## Projects
-![Bike Study](/assets/img/profile_photo.jpeg)
+
+
+
+
+
+
+
 
 
 ## Let's Connect
