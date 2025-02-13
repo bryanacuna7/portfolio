@@ -37,6 +37,7 @@ Passionate about continuous improvement and process automation, focusing on boos
 🌱 Currently learning advanced data visualization techniques and exploring deeper into data science.
 
 ## Projects
+![Bike Study](/assets/img/profile_photo.jpeg)
 
 
 ## Let's Connect
