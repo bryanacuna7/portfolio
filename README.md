@@ -19,8 +19,6 @@ Passionate about financial analysis, automation, and data-driven decision-making
 - Automated key operational processes, including report creation, calculations, and data collection, using Excel, Salesforce, and Google Sheets, increasing team efficiency by **25%**.
 - Developed real-time dashboards in Salesforce, Power BI, and Excel, enabling senior management to make data-driven decisions throughout the month.
 - Implemented automated reporting solutions across multiple departments, shifting decision-making from intuition to **data-driven strategies**, improving financial performance.
-- Enhanced team efficiency by **15%** through strategic resource allocation, cross-training, and positive reinforcement.
-- Led daily/weekly meetings to address operational escalations, increasing team productivity by **20%**.
 
 **Pre-Approval and Bank Verification Review Supervisor @ Funding Metrics (_June 2018 - September 2021_)**
 - Managed the underwriting process for business cash advances, analyzing financial reports, bank statements, and credit reports.
