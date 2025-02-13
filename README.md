@@ -7,14 +7,14 @@ Passionate about financial analysis, automation, and data-driven decision-making
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=A+self-taught+data+analyst;A+financial+analyst;Passionate+about+improvement;and+process+automation;Learning+SQL+and+Python" alt="Typing SVG" /></a>
 
 ## Skills <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px> 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau%20-%2314354C.svg?style=for-the-badge&logo=tableau&logoColor=white)
-![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%20?style=flat-square&logo=python&logoColor=white&labelColor=black&color=black)
+![MySQL](https://img.shields.io/badge/MySQL-%20?style=flat-square&logo=mysql&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-%20?style=flat-square&logo=jupyter&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft%20Excel-%20?style=flat-square&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Tableau](https://img.shields.io/badge/Tableau-%20?style=flat-square&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Power Bi](https://img.shields.io/badge/Power%20Bi-%20?style=flat-square&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![NumPy](https://img.shields.io/badge/Numpy-%20?style=flat-square&logo=numpy&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Pandas](https://img.shields.io/badge/Pandas-%20?style=flat-square&logo=pandas&logoColor=white&logoSize=auto&labelColor=black&color=black)
 
 
 ## Education
