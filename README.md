@@ -14,6 +14,22 @@ Passionate about financial analysis, automation, and data-driven decision-making
 ![NumPy](https://img.shields.io/badge/Numpy-%20?style=for-the-badge&logo=numpy&logoColor=white&logoSize=auto&labelColor=black&color=black)
 ![Pandas](https://img.shields.io/badge/Pandas-%20?style=for-the-badge&logo=pandas&logoColor=white&logoSize=auto&labelColor=black&color=black)
 
+## Work Experience
+**Finance Reporting Analyst @ Funding Metrics (_September 2021 - Present_)**
+- Automated key operational processes, including report creation, calculations, and data collection, using Excel, Salesforce, and Google Sheets, increasing team efficiency by **25%**.
+- Developed real-time dashboards in Salesforce, Power BI, and Excel, enabling senior management to make data-driven decisions throughout the month.
+- Implemented automated reporting solutions across multiple departments, shifting decision-making from intuition to **data-driven strategies**, improving financial performance.
+- Enhanced team efficiency by **15%** through strategic resource allocation, cross-training, and positive reinforcement.
+- Led daily/weekly meetings to address operational escalations, increasing team productivity by **20%**.
+
+**Pre-Approval and Bank Verification Review Supervisor @ Funding Metrics (_June 2018 - September 2021_)**
+- Managed the underwriting process for business cash advances, analyzing financial reports, bank statements, and credit reports.
+- Conducted risk and fraud analysis by reviewing legal documents, tax reports, and identity documentation, increasing fraud detection accuracy by **25%**.
+- Generated pre-approval offers through detailed analysis of bank statements and financial data, streamlining the approval process.
+
+**Underwriter @ IBM (_June 2017 - June 2018_)**  
+**Hire and Separation Facilitator for LA & Canada @ IBM (_April 2016 - June 2017_)**
+
 
 ## Education
 ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
