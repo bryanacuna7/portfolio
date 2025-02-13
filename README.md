@@ -2,7 +2,8 @@
 
 ## About Me
 
-Passionate about financial analysis, automation, and data-driven decision-making, with 5+ years of experience optimizing processes and improving reporting efficiency. Skilled in SQL, Power BI, Tableau, and Advanced Excel, I develop automated solutions that enhance accuracy, streamline workflows, and drive business insights.
+Passionate about financial analysis, automation, and data-driven decision-making, with 5+ years of experience optimizing processes and improving reporting efficiency. Skilled in SQL, Power BI, Tableau, and Advanced Excel.  
+I develop automated solutions that enhance accuracy, streamline workflows, and drive business insights.
 
 ## Skills 
 ![Python](https://img.shields.io/badge/Python-%20?style=for-the-badge&logo=python&logoColor=white&labelColor=black&color=black)
