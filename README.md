@@ -1,8 +1,8 @@
+# Data Analyst
 
 ## About Me
 
-Finance Reporting Analyst with 5 years of experience in financial analysis and data-driven decision-making. 
-Passionate about continuous improvement and process automation, focusing on boosting operational efficiency and reducing costs.
+Passionate about financial analysis, automation, and data-driven decision-making, with 5+ years of experience optimizing processes and improving reporting efficiency. Skilled in SQL, Power BI, Tableau, and Advanced Excel, I develop automated solutions that enhance accuracy, streamline workflows, and drive business insights.
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=A+self-taught+data+analyst;A+financial+analyst;Passionate+about+improvement;and+process+automation;Learning+SQL+and+Python" alt="Typing SVG" /></a>
 
