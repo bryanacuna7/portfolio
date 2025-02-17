@@ -39,6 +39,8 @@ I develop automated solutions that enhance accuracy, streamline workflows, and d
 
 ## Projects
 
+![image](https://github.com/user-attachments/assets/51dd6931-4989-4508-8b6c-c0a08ed0bf6e)
+
 
 
 
