@@ -40,15 +40,13 @@ I develop automated solutions that enhance accuracy, streamline workflows, and d
 ## Projects
 
 ### Tableau HR Project
-[Link](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
 
 [![HR | Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
 
-<iframe src="https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary" width="1400" height="827"></iframe>
 
 
 **User Story**
+
 As an HR manager, I want a comprehensive dashboard to analyze human resources data, providing both summary views for high-level insights and detailed employee records for in-depth analysis
 
 Summary View
