@@ -39,14 +39,45 @@ I develop automated solutions that enhance accuracy, streamline workflows, and d
 
 ## Projects
 
-![image](https://github.com/user-attachments/assets/51dd6931-4989-4508-8b6c-c0a08ed0bf6e)
+### Tableau HR Project
+[Link](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
+<div class='tableauPlaceholder' id='viz1740664840015' style='position: relative'><noscript><a href='#'><img alt='HR | Summary ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HR&#47;HRTableauProject-Baraa&#47;HRSummary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HRTableauProject-Baraa&#47;HRSummary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HR&#47;HRTableauProject-Baraa&#47;HRSummary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1740664840015');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='4727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 
+**User Story**
+As an HR manager, I want a comprehensive dashboard to analyze human resources data, providing both summary views for high-level insights and detailed employee records for in-depth analysis
 
+Summary View
 
+The summary view should be divided into three main sections: Overview, Demographics, and Income Analysis
 
+Overview
+The Overview section should provide a snapshot of the overall HR metrics, including:
+
+Display the total number of hired employees, active employees, and terminated employees.
+Visualize the total number of hired and terminated employees over the years.
+Present a breakdown of total employees by department and job titles.
+Compare total employees between headquarters (HQ) and branches (New York is the HQ)
+Show the distribution of employees by city and state.
+Demographics
+The Demographics section should offer insights into the composition of the workforce, including:
+
+Present the gender ratio in the company.
+Visualize the distribution of employees across age groups and education levels.
+Show the total number of employees within each age group.
+Show the total number of employees within each education level.
+Present the correlation between employees’s educational backgrounds and their performance ratings.
+Income
+The income analysis section should focus on salary-related metrics, including:
+
+Compare salaries across different education levels for both genders to identify any discrepancies or patterns.
+Present how the age correlate with the salary for employees in each department.
+Employee Records View
+
+Provide a comprehensive list of all employees with necessary information such as name, department, position, gender, age, education, and salary.
+Users should be able to filter the list based on any of the available columns.
 
 
 ## Let's Connect
