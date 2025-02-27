@@ -41,9 +41,7 @@ I develop automated solutions that enhance accuracy, streamline workflows, and d
 
 ### Tableau HR Project
 
-[![HR | Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
-
-
+[![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
 
 **User Story**
 
