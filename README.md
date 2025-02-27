@@ -52,6 +52,7 @@ Summary View
 The summary view should be divided into three main sections: Overview, Demographics, and Income Analysis
 
 Overview
+
 The Overview section should provide a snapshot of the overall HR metrics, including:
 
 Display the total number of hired employees, active employees, and terminated employees.
