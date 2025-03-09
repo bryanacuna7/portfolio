@@ -80,6 +80,8 @@ The Income Analysis section should focus on salary-related metrics, including:
 
 </details>
 
+
+
 [![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
 
 
