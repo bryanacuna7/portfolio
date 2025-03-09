@@ -1,4 +1,4 @@
-# 📊 Data Analyst Portfolio
+# Data Analyst Portfolio
 
 ## 🏆 About Me
 I am a **Data Analyst** passionate about financial analysis, automation, and data-driven decision-making. With **5+ years of experience**, I specialize in optimizing processes and improving reporting efficiency for organizations.  
@@ -60,30 +60,28 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 ### **HR Project**  
 
-<details>  
-
-  <summary><h4>View project details</h4></summary>  
+<details>
+  <summary><h4>View project details</h4></summary>
 
   **HR Dashboard**  
 
   **User Story:**  
-  As an HR manager, I need a comprehensive dashboard for workforce insights.  
+  As an HR manager, I need a comprehensive dashboard for workforce insights.
 
   - 📌 **Overview:** Total hires, terminations, and department breakdowns.  
   - 📌 **Demographics:** Gender ratio, age distribution, and education levels.  
   - 📌 **Income Analysis:** Salary trends based on education and age.  
 
-</details>  
+</details>
 
-[![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)  
+[![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
 
 ---
 
 ### **Sales Dashboard**  
 
-<details>  
-
-  <summary><h4>View project details</h4></summary>  
+<details>
+  <summary><h4>View project details</h4></summary>
 
   **Sales Performance Dashboard**  
 
@@ -92,9 +90,9 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
   - 📌 Display KPIs like total sales, profits, and quantity.  
   - 📌 Identify peak and low-performance months.  
 
-</details>  
+</details>
 
-[![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)  
+[![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
 
 ---
 
