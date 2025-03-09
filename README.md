@@ -1,62 +1,48 @@
-# Data Analyst Portfolio
+# Data Analyst
 
-## 🏆 About Me
+## About Me
+
 I am a **Data Analyst** passionate about financial analysis, automation, and data-driven decision-making. With **5+ years of experience**, I specialize in optimizing processes and improving reporting efficiency for organizations.  
 
-💡 **Some highlights of my work:**
-- Developed automated solutions using **SQL, Power BI, Tableau, and Advanced Excel**, enhancing accuracy and streamlining workflows.  
+💡 Some highlights of my work:
+- Developed automated solutions using **SQL**, **Power BI**, **Tableau**, and **Advanced Excel**, enhancing accuracy and streamlining workflows.  
 - Created interactive dashboards that provided actionable insights for senior management.  
 
 🌱 I'm currently exploring **advanced data visualization techniques** and delving deeper into **data science**.
 
----
-
-## 🛠 Skills  
+## Skills 
 ![Python](https://img.shields.io/badge/Python-%20?style=for-the-badge&logo=python&logoColor=white&labelColor=black&color=black)
-![MySQL](https://img.shields.io/badge/MySQL-%20?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black&color=black)
-![Jupyter Notebook](https://img.shields.io/badge/Jupyter-%20?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=black&color=black)
-![Microsoft Excel](https://img.shields.io/badge/Microsoft%20Excel-%20?style=for-the-badge&logoColor=white&labelColor=black&color=black)
-![Tableau](https://img.shields.io/badge/Tableau-%20?style=for-the-badge&logoColor=white&labelColor=black&color=black)
-![Power Bi](https://img.shields.io/badge/Power%20Bi-%20?style=for-the-badge&logoColor=white&labelColor=black&color=black)
-![NumPy](https://img.shields.io/badge/Numpy-%20?style=for-the-badge&logo=numpy&logoColor=white&labelColor=black&color=black)
-![Pandas](https://img.shields.io/badge/Pandas-%20?style=for-the-badge&logo=pandas&logoColor=white&labelColor=black&color=black)
+![MySQL](https://img.shields.io/badge/MySQL-%20?style=for-the-badge&logo=mysql&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-%20?style=for-the-badge&logo=jupyter&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft%20Excel-%20?style=for-the-badge&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Tableau](https://img.shields.io/badge/Tableau-%20?style=for-the-badge&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Power Bi](https://img.shields.io/badge/Power%20Bi-%20?style=for-the-badge&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![NumPy](https://img.shields.io/badge/Numpy-%20?style=for-the-badge&logo=numpy&logoColor=white&logoSize=auto&labelColor=black&color=black)
+![Pandas](https://img.shields.io/badge/Pandas-%20?style=for-the-badge&logo=pandas&logoColor=white&logoSize=auto&labelColor=black&color=black)
 
----
+## Work Experience
+**Finance Reporting Analyst @ Funding Metrics (_September 2021 - Present_)**
+- Automated key operational processes, including report creation, calculations, and data collection, using Excel, Salesforce, and Google Sheets, increasing team efficiency by **25%**.
+- Developed real-time dashboards in Salesforce, Power BI, and Excel, enabling senior management to make data-driven decisions throughout the month.
 
-## 💼 Work Experience  
+**Pre-Approval and Bank Verification Review Supervisor @ Funding Metrics (_June 2018 - September 2021_)**
+- Managed the underwriting process for business cash advances, analyzing financial reports, bank statements, and credit reports.
+- Generated pre-approval offers through detailed analysis of bank statements and financial data, streamlining the approval process.
 
-### **Finance Reporting Analyst @ Funding Metrics** (_Sep 2021 - Present_)
-- Automated reporting processes, reducing manual work and increasing accuracy.
-- Developed **real-time dashboards** in Power BI and Tableau to provide actionable insights for senior management.
-- Enhanced financial governance by ensuring data integrity and reporting consistency.
-- Created scripts to automate **data extraction, transformation, and loading (ETL)**, improving efficiency.
+**Underwriter @ IBM (_June 2017 - June 2018_)**  
+**Hire and Separation Facilitator for LA & Canada @ IBM (_April 2016 - June 2017_)**
 
-### **Pre-Approval & Bank Verification Review Supervisor @ Funding Metrics** (_Jun 2018 - Sep 2021_)
-- Managed underwriting for **business cash advances**, analyzing financial reports and bank statements.
-- Supervised a team of analysts, improving operational efficiency by **20%** through optimized queue management.
-- Designed **Excel-based automation tools** that replaced manual financial analysis, saving hours of work weekly.
-- Created **data scrubbing processes** to identify MCA (Merchant Cash Advances) and lines of credit.
 
-### **Underwriter @ IBM** (_Jun 2017 - Jun 2018_)
-- Analyzed credit and financial risk for **corporate clients** applying for credit lines.
-- Reviewed financial statements and assessed repayment ability based on historical data.
-- Collaborated with global teams to ensure compliance with IBM’s financial policies.
+## Education
+![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
+![Datacamp](https://img.shields.io/badge/Datacamp-05192D?style=for-the-badge&logo=datacamp&logoColor=03E860)
 
-### **Hire & Separation Facilitator @ IBM** (_Apr 2016 - Jun 2017_)
-- Managed the hiring and exit processes for employees across multiple regions.
-- Automated reporting processes, reducing administrative workload and improving efficiency.
 
----
 
-## 📚 Education  
-![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)  
-![Datacamp](https://img.shields.io/badge/Datacamp-05192D?style=for-the-badge&logo=datacamp&logoColor=03E860)  
 
-🌱 **Currently learning advanced data visualization techniques and exploring deeper into data science.**  
+🌱 Currently learning advanced data visualization techniques and exploring deeper into data science.
 
----
-
-## 📊 Tableau Projects  
+## Tableau Projects
 
 ### HR Project
 
@@ -64,7 +50,7 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 <details>
   
-<summary><h3><strong>Click to see more details</strong></h3></summary>
+<summary><h3><strong>View project details</strong></h3></summary>
 
 ## HR Dashboard
 
@@ -112,7 +98,7 @@ Provide a comprehensive list of all employees with necessary information such as
 
 <details>
   
-<summary><h3><strong>Click to see more details</strong></h3></summary>
+<summary><h3><strong>View project details</strong></h3></summary>
 
 ## Tableau User Story | Sales Performance
 
