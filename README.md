@@ -25,16 +25,26 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 ## 💼 Work Experience  
 
-### **Finance Reporting Analyst @ Funding Metrics** (_Sep 2021 - Present_)  
-- Automated key operational processes, increasing team efficiency by **25%**.  
-- Developed real-time dashboards enabling senior management to make data-driven decisions.  
+### **Finance Reporting Analyst @ Funding Metrics** (_Sep 2021 - Present_)
+- Automated reporting processes, reducing manual work and increasing accuracy.
+- Developed **real-time dashboards** in Power BI and Tableau to provide actionable insights for senior management.
+- Enhanced financial governance by ensuring data integrity and reporting consistency.
+- Created scripts to automate **data extraction, transformation, and loading (ETL)**, improving efficiency.
 
-### **Pre-Approval & Bank Verification Review Supervisor @ Funding Metrics** (_Jun 2018 - Sep 2021_)  
-- Managed underwriting for business cash advances, analyzing financial reports and bank statements.  
-- Streamlined the approval process through detailed financial analysis.  
+### **Pre-Approval & Bank Verification Review Supervisor @ Funding Metrics** (_Jun 2018 - Sep 2021_)
+- Managed underwriting for **business cash advances**, analyzing financial reports and bank statements.
+- Supervised a team of analysts, improving operational efficiency by **20%** through optimized queue management.
+- Designed **Excel-based automation tools** that replaced manual financial analysis, saving hours of work weekly.
+- Created **data scrubbing processes** to identify MCA (Merchant Cash Advances) and lines of credit.
 
-### **Underwriter @ IBM** (_Jun 2017 - Jun 2018_)  
-### **Hire & Separation Facilitator @ IBM** (_Apr 2016 - Jun 2017_)  
+### **Underwriter @ IBM** (_Jun 2017 - Jun 2018_)
+- Analyzed credit and financial risk for **corporate clients** applying for credit lines.
+- Reviewed financial statements and assessed repayment ability based on historical data.
+- Collaborated with global teams to ensure compliance with IBM’s financial policies.
+
+### **Hire & Separation Facilitator @ IBM** (_Apr 2016 - Jun 2017_)
+- Managed the hiring and exit processes for employees across multiple regions.
+- Automated reporting processes, reducing administrative workload and improving efficiency.
 
 ---
 
@@ -49,8 +59,11 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 ## 📊 Tableau Projects  
 
 ### **HR Project**  
+
 <details>  
+
   <summary><h4>View project details</h4></summary>  
+
   **HR Dashboard**  
 
   **User Story:**  
@@ -59,6 +72,7 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
   - 📌 **Overview:** Total hires, terminations, and department breakdowns.  
   - 📌 **Demographics:** Gender ratio, age distribution, and education levels.  
   - 📌 **Income Analysis:** Salary trends based on education and age.  
+
 </details>  
 
 [![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)  
@@ -66,14 +80,18 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 ---
 
 ### **Sales Dashboard**  
+
 <details>  
+
   <summary><h4>View project details</h4></summary>  
+
   **Sales Performance Dashboard**  
 
   **Dashboard Purpose:**  
   - 📌 Analyze sales performance and trends year-over-year.  
   - 📌 Display KPIs like total sales, profits, and quantity.  
   - 📌 Identify peak and low-performance months.  
+
 </details>  
 
 [![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)  
@@ -90,4 +108,4 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
   <a href="https://www.linkedin.com/in/bryan-acu%C3%B1a-as12b7/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>  
-</p>  
+</p>
