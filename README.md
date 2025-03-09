@@ -57,15 +57,26 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 ### Sales Dashboard
 
-  **Dashboard Purpose:**  
-  - 📌 Analyze sales performance and trends year-over-year.  
-  - 📌 Display KPIs like total sales, profits, and quantity.  
-  - 📌 Identify peak and low-performance months.  
+**User Story:**  
+As a sales manager, I need two dashboards to analyze sales and customer performance.
+
+## 📌 Sales Dashboard:
+- **Overview:** Total sales, profits, and quantity (current vs previous year).  
+- **Trends:** Monthly sales data with high/low sales months.  
+- **Product Comparison:** Sales and profit by product subcategory.  
+- **Weekly Trends:** Weekly sales and profit, with average performance.
+
+## 📌 Customer Dashboard:
+- **Overview:** Total customers, sales per customer, and orders (current vs previous year).  
+- **Trends:** Monthly data with high/low sales months.  
+- **Distribution:** Customer behavior by order count.  
+- **Top Customers:** Top 10 by profit, showing rank and key metrics.
+
+## 📌 Design & Interactivity:
+- **Dynamic:** Year selection and easy navigation.  
+- **Filters:** By product category, subcategory, and location.
 
 [![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
-
-
-
 
 
 ## Let's Connect
