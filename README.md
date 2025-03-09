@@ -58,52 +58,138 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 ## 📊 Tableau Projects  
 
-### **HR Project**  
-
-<details>
-  <summary><h4>View project details</h4></summary>
-
-  **HR Dashboard**  
-
-  **User Story:**  
-  As an HR manager, I need a comprehensive dashboard for workforce insights.
-
-  - 📌 **Overview:** Total hires, terminations, and department breakdowns.  
-  - 📌 **Demographics:** Gender ratio, age distribution, and education levels.  
-  - 📌 **Income Analysis:** Salary trends based on education and age.  
-
-</details>
+### HR Project
 
 [![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
 
+<details>
+  
+<summary><h3><strong>Click to see more details</strong></h3></summary>
+
+## HR Dashboard
+
+### User Story
+As an HR manager, I want a comprehensive dashboard to analyze human resources data, providing both summary views for high-level insights and detailed employee records for in-depth analysis.
+
 ---
 
-### **Sales Dashboard**  
+### Summary View
 
-<details>
-  <summary><h4>View project details</h4></summary>
+The summary view should be divided into three main sections: **Overview**, **Demographics**, and **Income Analysis**.
 
-  **Sales Performance Dashboard**  
+### Overview
+The Overview section should provide a snapshot of the overall HR metrics, including:
+- Display the total number of hired employees, active employees, and terminated employees.  
+- Visualize the total number of hired and terminated employees over the years.  
+- Present a breakdown of total employees by department and job titles.  
+- Compare total employees between headquarters (HQ) and branches (New York is the HQ).  
+- Show the distribution of employees by city and state.  
 
-  **Dashboard Purpose:**  
-  - 📌 Analyze sales performance and trends year-over-year.  
-  - 📌 Display KPIs like total sales, profits, and quantity.  
-  - 📌 Identify peak and low-performance months.  
+### Demographics
+The Demographics section should offer insights into the composition of the workforce, including:
+- Present the gender ratio in the company.  
+- Visualize the distribution of employees across age groups and education levels.  
+- Show the total number of employees within each age group.  
+- Show the total number of employees within each education level.  
+- Present the correlation between employees’ educational backgrounds and their performance ratings.  
 
+### Income Analysis
+The Income Analysis section should focus on salary-related metrics, including:
+- Compare salaries across different education levels for both genders to identify any discrepancies or patterns.  
+- Present how age correlates with salary for employees in each department.  
+
+---
+
+## Employee Records View
+
+Provide a comprehensive list of all employees with necessary information such as name, department, position, gender, age, education, and salary.  
+- Users should be able to filter the list based on any of the available columns.
 </details>
+
+### Sales Dashboard
 
 [![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
 
+<details>
+  
+<summary><h3><strong>Click to see more details</strong></h3></summary>
+
+## Tableau User Story | Sales Performance
+
+### Introduction
+This user story outlines the specifications for building two dashboards using Tableau to help stakeholders, including sales managers and executives, analyze sales performance and customers.
+
 ---
 
-## 📩 Let's Connect  
+### Sales Dashboard | Requirements
+
+#### Dashboard Purpose
+The purpose of the sales dashboard is to present an overview of the sales metrics and trends in order to analyze year-over-year sales performance and understand sales trends.
+
+#### Key Requirements
+
+##### KPI Overview
+- Display a summary of total sales, profits, and quantity for the current year and the previous year.
+
+##### Sales Trends
+- Present the data for each KPI on a monthly basis for both the current year and the previous year.
+- Identify months with the highest and lowest sales and make them easy to recognize.
+
+##### Product Subcategory Comparison
+- Compare sales performance by different product subcategories for the current year and the previous year.
+- Include a comparison of sales with profit.
+
+##### Weekly Trends for Sales & Profit
+- Present weekly sales and profit data for the current year.
+- Display the average weekly values.
+- Highlight weeks that are above and below the average to draw attention to sales and profit performance.
+
+---
+
+### Customer Dashboard | Requirements
+
+#### Dashboard Purpose
+The customer dashboard aims to provide an overview of customer data, trends, and behaviors. It will help marketing teams and management understand customer segments and improve customer satisfaction.
+
+#### Key Requirements
+
+##### KPI Overview
+- Display a summary of the total number of customers, total sales per customer, and total number of orders for the current year and the previous year.
+
+##### Customer Trends
+- Present the data for each KPI on a monthly basis for both the current year and the previous year.
+- Identify months with the highest and lowest sales and make them easy to recognize.
+
+##### Customer Distribution by Number of Orders
+- Represent the distribution of customers based on the number of orders they have placed to provide insights into customer behavior, loyalty, and engagement.
+
+##### Top 10 Customers by Profit
+- Present the top 10 customers who have generated the highest profits for the company.
+- Show additional information like rank, number of orders, current sales, current profit, and the last order date.
+
+---
+
+### Design & Interactivity Requirements
+
+#### Dashboard Dynamic
+- The dashboard should allow users to check historical data by offering them the flexibility to select any desired year.
+- Provide users with the ability to navigate between the dashboards easily.
+- Make the charts and graphs interactive, enabling users to filter data using the charts.
+
+#### Data Filters
+- Allow users to filter data by product information like category and subcategory, and by location information like region, state, and city.
+</details>
+
+
+
+## Let's Connect
 
 <p>
   <a href="mailto:bryn.acuna7@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail%3A%20bryn.acuna7%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white">
+  <img src="https://img.shields.io/badge/Gmail%3A%20bryn.acuna7%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white&logoSize=auto">
   </a>
   
-  <a href="https://www.linkedin.com/in/bryan-acu%C3%B1a-as12b7/" target="_blank">
+   <a href="https://www.linkedin.com/in/bryan-acu%C3%B1a-as12b7/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>  
 </p>
