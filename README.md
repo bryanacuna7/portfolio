@@ -32,13 +32,9 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 **Underwriter @ IBM (_June 2017 - June 2018_)**  
 **Hire and Separation Facilitator for LA & Canada @ IBM (_April 2016 - June 2017_)**
 
-
 ## Education
 ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
 ![Datacamp](https://img.shields.io/badge/Datacamp-05192D?style=for-the-badge&logo=datacamp&logoColor=03E860)
-
-
-
 
 🌱 Currently learning advanced data visualization techniques and exploring deeper into data science.
 
@@ -46,11 +42,9 @@ I am a **Data Analyst** passionate about financial analysis, automation, and dat
 
 ### HR Project
 
-[![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
-
 <details>
   
-<summary><h3><strong>Click to see more details</strong></h3></summary>
+<summary><h4><strong>View project details</strong></h4></summary>
 
 ## HR Dashboard
 
@@ -84,21 +78,17 @@ The Income Analysis section should focus on salary-related metrics, including:
 - Compare salaries across different education levels for both genders to identify any discrepancies or patterns.  
 - Present how age correlates with salary for employees in each department.  
 
----
-
-## Employee Records View
-
-Provide a comprehensive list of all employees with necessary information such as name, department, position, gender, age, education, and salary.  
-- Users should be able to filter the list based on any of the available columns.
 </details>
+
+[![HR Summary](https://public.tableau.com/static/images/HR/HRTableauProject-Baraa/HRSummary/1_rss.png)](https://public.tableau.com/views/HRTableauProject-Baraa/HRSummary)
+
+
 
 ### Sales Dashboard
 
-[![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
-
 <details>
   
-<summary><h3><strong>Click to see more details</strong></h3></summary>
+<summary><h4><strong>View project details</strong></h4></summary>
 
 ## Tableau User Story | Sales Performance
 
@@ -121,50 +111,9 @@ The purpose of the sales dashboard is to present an overview of the sales metric
 - Present the data for each KPI on a monthly basis for both the current year and the previous year.
 - Identify months with the highest and lowest sales and make them easy to recognize.
 
-##### Product Subcategory Comparison
-- Compare sales performance by different product subcategories for the current year and the previous year.
-- Include a comparison of sales with profit.
-
-##### Weekly Trends for Sales & Profit
-- Present weekly sales and profit data for the current year.
-- Display the average weekly values.
-- Highlight weeks that are above and below the average to draw attention to sales and profit performance.
-
----
-
-### Customer Dashboard | Requirements
-
-#### Dashboard Purpose
-The customer dashboard aims to provide an overview of customer data, trends, and behaviors. It will help marketing teams and management understand customer segments and improve customer satisfaction.
-
-#### Key Requirements
-
-##### KPI Overview
-- Display a summary of the total number of customers, total sales per customer, and total number of orders for the current year and the previous year.
-
-##### Customer Trends
-- Present the data for each KPI on a monthly basis for both the current year and the previous year.
-- Identify months with the highest and lowest sales and make them easy to recognize.
-
-##### Customer Distribution by Number of Orders
-- Represent the distribution of customers based on the number of orders they have placed to provide insights into customer behavior, loyalty, and engagement.
-
-##### Top 10 Customers by Profit
-- Present the top 10 customers who have generated the highest profits for the company.
-- Show additional information like rank, number of orders, current sales, current profit, and the last order date.
-
----
-
-### Design & Interactivity Requirements
-
-#### Dashboard Dynamic
-- The dashboard should allow users to check historical data by offering them the flexibility to select any desired year.
-- Provide users with the ability to navigate between the dashboards easily.
-- Make the charts and graphs interactive, enabling users to filter data using the charts.
-
-#### Data Filters
-- Allow users to filter data by product information like category and subcategory, and by location information like region, state, and city.
 </details>
+
+[![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
 
 
 
@@ -179,21 +128,3 @@ The customer dashboard aims to provide an overview of customer data, trends, and
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>  
 </p>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<!---
-bryanacuna7/bryanacuna7 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
