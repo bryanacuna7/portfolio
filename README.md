@@ -81,14 +81,14 @@ As a sales manager, I need two dashboards to analyze sales and customer performa
 [![Sales Dashboard](https://public.tableau.com/static/images/Pr/Project21h/SalesDashboard/1_rss.png)](https://public.tableau.com/views/Project21h/SalesDashboard)
 
 ## SQL Projects
-### Data Warehouse and Analytics Project
+### Data Warehouse and Analytics Project [**View Project**](https://github.com/bryanacuna7/sql-data-warehouse-project/tree/main)
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
 ![image](https://github.com/user-attachments/assets/274bd003-7035-41f6-908c-f0004fe5af4a)
 
 
-[**View Project**](https://github.com/bryanacuna7/sql-data-warehouse-project/tree/main)
+
 
 
 
