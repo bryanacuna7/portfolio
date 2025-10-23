@@ -1,4 +1,4 @@
-# 💼 Data Analyst  
+# 💼 Financial Data & Systems Analyst 
 
 ## About Me  
 
