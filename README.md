@@ -45,7 +45,11 @@ My approach blends **analytical thinking** with **hands-on execution**, utilizin
 ## 💻 Automation & Full-Stack Projects
 
 ### ✈️ Corporate Vacation Management Portal
+
+[![Vacation App Demo](assets/img/vacationes-webapp-demo.jpg)](https://bryanacuna7.github.io/vacation-tracker-app)
+
 **[View Repository](https://github.com/bryanacuna7/vacation-tracker-app) | [Live Demo](https://bryanacuna7.github.io/vacation-tracker-app)**
+
 
 Designed and architected a **Full-Stack Single Page Application (SPA)** to solve the operational bottleneck of manual PTO tracking. This tool centralizes team availability, enforces business logic, and automates the approval workflow.
 
