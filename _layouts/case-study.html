@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<article class="case-study">
+  <header class="cs-hero">
+    <div class="cs-hero__meta">
+      <dl>
+        {% if page.role %}
+          <dt class="sr-only">Role</dt>
+          <dd>{{ page.role }}</dd>
+        {% endif %}
+        {% if page.year %}
+          <dt class="sr-only">Year</dt>
+          <dd>{{ page.year }}</dd>
+        {% endif %}
+      </dl>
+    </div>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.tagline %}
+      <p class="cs-hero__lead">{{ page.tagline }}</p>
+    {% endif %}
+
+    <div class="cs-hero__links">
+      {% if page.live %}
+        <a class="button button--primary" href="{{ page.live }}" rel="noopener" aria-label="Visit {{ page.title }} live site">
+          Visit live site
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      {% endif %}
+      {% if page.repo %}
+        <a class="button" href="{{ page.repo }}" rel="noopener">View source</a>
+      {% endif %}
+      <a class="button button--ghost" href="{{ '/' | relative_url }}">← Back to home</a>
+    </div>
+
+    {% if page.stack %}
+      <ul class="cs-hero__stack chip-list" role="list" aria-label="Stack">
+        {% for tech in page.stack %}
+          <li><span class="chip">{{ tech }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  <div class="cs-body">
+    {{ content }}
+
+    <p class="cs-back">
+      <a class="button" href="{{ '/' | relative_url }}">← All projects</a>
+    </p>
+  </div>
+</article>

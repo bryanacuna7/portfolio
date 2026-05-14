@@ -1,0 +1,23 @@
+{%- comment -%}
+Responsive picture with webp + png fallback. Params:
+  src    — base path under /assets without extension (required)
+  alt    — alt text (required)
+  width  — intrinsic width in px (required for CLS)
+  height — intrinsic height in px (required for CLS)
+  eager  — "true" to disable lazy loading (above-the-fold)
+  class  — extra class for the wrapping figure (optional)
+{%- endcomment -%}
+<figure class="shot {{ include.class }}">
+  <picture>
+    <source srcset="{{ include.src | append: '.webp' | relative_url }}" type="image/webp">
+    <img
+      src="{{ include.src | append: '.png' | relative_url }}"
+      alt="{{ include.alt | escape }}"
+      width="{{ include.width }}"
+      height="{{ include.height }}"
+      {% if include.eager == 'true' %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+      decoding="async"
+    >
+  </picture>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

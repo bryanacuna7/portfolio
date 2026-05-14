@@ -1,0 +1,51 @@
+{%- comment -%}
+Project card. Params:
+  title       — card title (required)
+  href        — link target (required)
+  image       — image path under /assets, no leading slash (required)
+  alt         — image alt text (required)
+  role        — short kicker line above title (optional)
+  description — single-line description (required)
+  stack       — comma-separated list of tech labels (optional)
+  featured    — "true" to use the larger media aspect (optional)
+{%- endcomment -%}
+
+{% assign card_id = include.title | slugify %}
+{% assign is_external = include.href | slice: 0, 4 %}
+<article class="card {% if include.featured == 'true' %}card--featured{% endif %}">
+  {% if is_external == 'http' %}
+    <a class="card__link" href="{{ include.href }}" rel="noopener" aria-labelledby="card-{{ card_id }}">
+      <span class="sr-only">View {{ include.title }}</span>
+    </a>
+  {% else %}
+    <a class="card__link" href="{{ include.href | relative_url }}" aria-labelledby="card-{{ card_id }}">
+      <span class="sr-only">View {{ include.title }}</span>
+    </a>
+  {% endif %}
+  <div class="card__media">
+    {% assign img_external = include.image | slice: 0, 4 %}
+    <img
+      src="{% if img_external == 'http' %}{{ include.image }}{% else %}{{ include.image | relative_url }}{% endif %}"
+      alt="{{ include.alt | escape }}"
+      loading="lazy"
+      decoding="async"
+    >
+  </div>
+  <div class="card__body">
+    {% if include.role %}<p class="card__role">{{ include.role }}</p>{% endif %}
+    <h3 id="card-{{ card_id }}" class="card__title">{{ include.title }}</h3>
+    <p class="card__desc">{{ include.description }}</p>
+    {% if include.stack %}
+      <ul class="chip-list" role="list">
+        {% assign chips = include.stack | split: "," %}
+        {% for chip in chips %}
+          <li><span class="chip">{{ chip | strip }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <div class="card__meta">
+      <span class="card__role">View {% if include.featured == 'true' %}case study{% else %}project{% endif %}</span>
+      <span class="card__arrow" aria-hidden="true">→</span>
+    </div>
+  </div>
+</article>

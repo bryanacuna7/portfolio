@@ -1,0 +1,16 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
