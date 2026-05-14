@@ -101,20 +101,55 @@ A short tour of the parts that took the most thinking:
 
 ## Selected features
 
-The product is built around three flows, each designed for a different audience:
+The product is built around two audiences with very different needs: the
+client booking from a barbershop's public site, and the owner running their
+business from one dashboard. Both views share a mobile-first design system,
+dark default, and the same Supabase backend.
 
-- **Public booking.** Four steps: pick a service, pick a barber + time, drop your name and phone, confirm. No account required to reach the end. Designed to feel as effortless as ordering food.
-- **Live tracking.** Six states (booked → countdown → queue → "you're next" → "your turn" → completed), one URL, push notifications when the turn flips. Walk-ins join the same queue with one tap.
-- **Owner dashboard.** Day / week / month appointments, revenue, no-show tracking, team management, services, clients, loyalty, announcements, subscription, all on a mobile-first layout that runs from any phone.
+### Public booking flow
 
-Plus a first-class **dark mode** with full token swap, not a "background toggle" afterthought.
+Four steps, no account required to reach the end. Designed to feel as
+effortless as ordering food.
 
-<aside class="cs-figure" style="border: 1px dashed var(--border-strong); border-radius: var(--radius-3); padding: var(--space-5); text-align: center; background: var(--surface);">
-  <p class="mono" style="color: var(--muted); font-size: var(--fs-sm); margin: 0;">
-    Screenshot gallery being refreshed with the current branding.<br>
-    See the product live at <a href="https://barberapp.nexocr.pro" rel="noopener">barberapp.nexocr.pro</a>.
-  </p>
-</aside>
+<div class="cs-shots cs-shots--3">
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/booking-1-services.png' | relative_url }}" alt="Booking step one: a list of services with prices, with the business name and open status at the top." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">01. Pick a service</figcaption>
+  </figure>
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/booking-2-datetime.png' | relative_url }}" alt="Booking step two: barber picker on top, date carousel below, time slots in a Mañana/Tarde split." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">02. Pick a barber, day, and time</figcaption>
+  </figure>
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/booking-3-info.png' | relative_url }}" alt="Booking step three: a clean contact form with phone placeholder using safe demo numbers, and a Google OAuth option." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">03. Drop name and phone</figcaption>
+  </figure>
+</div>
+
+### Owner workspace
+
+Day, week, and month appointments, revenue, no-show tracking, team
+management, services, clients, loyalty, announcements, and subscription:
+all on a mobile-first layout that runs from any phone.
+
+<div class="cs-shots cs-shots--2">
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/owner-dashboard.png' | relative_url }}" alt="Owner dashboard with today's appointments and revenue KPIs, plus a share link to the booking page." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">Owner home</figcaption>
+  </figure>
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/owner-week.png' | relative_url }}" alt="Owner appointments calendar in week mode, with day-by-day breakdown and filter pills." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">Week calendar</figcaption>
+  </figure>
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/owner-menu.png' | relative_url }}" alt="Side navigation with Operación and Crecimiento sections: services, appointments, team, clients, blocks, expenses, analytics, loyalty, announcements." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">Full feature breadth</figcaption>
+  </figure>
+  <figure class="shot shot--mobile">
+    <img src="{{ '/assets/img/projects/barberapp/owner-services.png' | relative_url }}" alt="Services management view with categories, search, and a list of services showing price, duration, and booking counts." width="375" height="812" loading="lazy" decoding="async">
+    <figcaption class="mono">Services management</figcaption>
+  </figure>
+</div>
 
 ## Decisions worth sharing
 
