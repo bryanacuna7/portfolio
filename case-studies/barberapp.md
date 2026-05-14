@@ -1,6 +1,6 @@
 ---
 title: "Nexo Barber"
-tagline: "A multi-tenant SaaS for independent barbershops in Costa Rica. Public booking, live queue tracking, owner dashboard, and PWA — designed and shipped end-to-end."
+tagline: "A multi-tenant SaaS for independent barbershops in Costa Rica. Public booking, live queue tracking, owner dashboard, and PWA, designed and shipped end-to-end."
 role: "Founder · Product engineer · Designer · Operator"
 year: "2024 – present"
 live: "https://barberapp.nexocr.pro"
@@ -13,7 +13,16 @@ stack:
   - Framer Motion
   - Vercel
   - Sentry
-description: "Case study — Nexo Barber, a multi-tenant booking and operations SaaS for independent barbershops in Costa Rica."
+toc:
+  - { id: "at-a-glance", label: "At a glance" }
+  - { id: "the-problem", label: "The problem" }
+  - { id: "the-approach", label: "The approach" }
+  - { id: "architecture", label: "Architecture" }
+  - { id: "selected-features", label: "Selected features" }
+  - { id: "decisions-worth-sharing", label: "Decisions worth sharing" }
+  - { id: "what-i-optimize-for", label: "What I optimize for" }
+  - { id: "stack", label: "Stack" }
+description: "Case study, Nexo Barber, a multi-tenant booking and operations SaaS for independent barbershops in Costa Rica."
 ---
 
 ## At a glance
@@ -22,10 +31,10 @@ Nexo Barber is a mobile-first SaaS that helps independent barbershops replace th
 "paper notebook + WhatsApp" workflow with a single platform: clients book online,
 walk-ins join a live queue, barbers see their day, and owners run the business
 from one dashboard. Every shop has its own subdomain, branding, schedule, and
-loyalty program — all powered by a multi-tenant Supabase backend.
+loyalty program, all powered by a multi-tenant Supabase backend.
 
 I designed the product, built the codebase, set up the infrastructure, write the
-roadmap, and run customer support. The work spans the full stack — UI, design
+roadmap, and run customer support. The work spans the full stack: UI, design
 system, API, database, RLS policies, push notifications, observability, billing,
 and DevOps.
 
@@ -49,13 +58,13 @@ Three audiences, one product:
 1. **Clients** book a service from a public site at `<shop>.nexocr.pro`, follow a
    six-state live queue (countdown → "you're next" → "your turn" → completed),
    and keep a profile with their history and loyalty progress.
-2. **Barbers** see their day on a mobile-first "Mi día" timeline — appointments,
+2. **Barbers** see their day on a mobile-first "Mi día" timeline: appointments,
    walk-ins, and gaps, all in one column.
-3. **Owners** get a dashboard for the day, week, and month — revenue, no-show
-   tracking, services, team, clients, loyalty programs, announcements, and
-   subscription management.
+3. **Owners** get a dashboard for the day, week, and month, covering revenue,
+   no-show tracking, services, team, clients, loyalty programs, announcements,
+   and subscription management.
 
-Everything is mobile-first. The web app is a PWA — installable on home screens,
+Everything is mobile-first. The web app is a PWA: installable on home screens,
 works offline for the data already cached, and pushes notifications when a slot
 opens up or a turn arrives.
 
@@ -65,7 +74,7 @@ A short tour of the parts that took the most thinking:
 
 - **Multi-tenant data with Row-Level Security.** A single Postgres schema isolates
   every shop's data at the row level via Supabase RLS. Policies are written to
-  avoid self-referencing patterns — those cause infinite recursion the first time
+  avoid self-referencing patterns, which cause infinite recursion the first time
   you `JOIN` your own check table. Each request runs under the user's JWT;
   there is no superuser path from the client.
 - **Subdomain routing.** A Next.js middleware reads the request's host header,
@@ -78,7 +87,7 @@ A short tour of the parts that took the most thinking:
   in under a second.
 - **PWA with push.** A service worker manages the install prompt, offline
   fallbacks for the booking page, and Web Push for queue updates and reminders.
-- **Observability without noise.** Errors are categorized at capture time —
+- **Observability without noise.** Errors are categorized at capture time:
   validation failures, RPC failures, expected business outcomes
   (rate-limited, subscription expired), and truly unexpected errors. Only the
   last category alerts; the rest stay in structured logs. This was the
@@ -86,7 +95,7 @@ A short tour of the parts that took the most thinking:
   matters."
 - **Timezone discipline.** Vercel runs in UTC. Costa Rica doesn't. Every API
   route that filters by day or month computes its range using half-open UTC
-  intervals derived from the business's local time zone — never the server's.
+  intervals derived from the business's local time zone, never the server's.
   CI lints for the dangerous patterns. This eliminated a class of "the 7pm
   appointment disappeared" bugs.
 
@@ -96,7 +105,7 @@ The product is built around three flows, each designed for a different audience:
 
 - **Public booking.** Four steps: pick a service, pick a barber + time, drop your name and phone, confirm. No account required to reach the end. Designed to feel as effortless as ordering food.
 - **Live tracking.** Six states (booked → countdown → queue → "you're next" → "your turn" → completed), one URL, push notifications when the turn flips. Walk-ins join the same queue with one tap.
-- **Owner dashboard.** Day / week / month appointments, revenue, no-show tracking, team management, services, clients, loyalty, announcements, subscription — all on a mobile-first layout that runs from any phone.
+- **Owner dashboard.** Day / week / month appointments, revenue, no-show tracking, team management, services, clients, loyalty, announcements, subscription, all on a mobile-first layout that runs from any phone.
 
 Plus a first-class **dark mode** with full token swap, not a "background toggle" afterthought.
 
@@ -109,28 +118,56 @@ Plus a first-class **dark mode** with full token swap, not a "background toggle"
 
 ## Decisions worth sharing
 
-A few choices that aren't visible from the screenshots:
+A few choices that aren't visible from the screenshots.
 
-- **Apple-HIG mobile baseline.** 44 px touch targets, bottom sheets for any
-  overlay-like context, swipeable rows for destructive actions, a sticky two-row
-  header on calendar views, and inline KPI text rather than card-like KPI
-  containers. The product feels native because it picked one platform's
-  conventions and committed.
-- **Booking state restoration after OAuth.** A subtle but high-traffic bug: when
-  a user signs in mid-booking, restoring the flow has to downgrade the step if
-  the time slot is no longer valid. The page now ships with a runtime invariant
-  that auto-corrects mismatched state instead of rendering a blank screen.
-- **Server-side enforcement of operational rules.** UI-level guards aren't
-  enough. Booking, closures, expired offers — every state transition runs through
-  a server-side check, written assuming a hostile client.
-- **CI gates for the patterns that bite.** `lint:tz` blocks any new code that
-  treats day/month boundaries in server time. `lint:adapter` catches JSONB
-  columns being read without the canonical adapter. Both rules were added the
-  day after the bug they prevent.
+<div class="decisions">
+  <article class="decision">
+    <p class="decision__num mono">01</p>
+    <h3 class="decision__title">Apple-HIG mobile baseline</h3>
+    <p class="decision__body">
+      44 px touch targets, bottom sheets for any overlay-like context, swipeable
+      rows for destructive actions, a sticky two-row header on calendar views,
+      and inline KPI text rather than card-like KPI containers. The product
+      feels native because it picked one platform's conventions and committed.
+    </p>
+  </article>
+
+  <article class="decision">
+    <p class="decision__num mono">02</p>
+    <h3 class="decision__title">Booking state restoration after OAuth</h3>
+    <p class="decision__body">
+      A subtle but high-traffic bug: when a user signs in mid-booking, restoring
+      the flow has to downgrade the step if the time slot is no longer valid.
+      The page now ships with a runtime invariant that auto-corrects mismatched
+      state instead of rendering a blank screen.
+    </p>
+  </article>
+
+  <article class="decision">
+    <p class="decision__num mono">03</p>
+    <h3 class="decision__title">Server-side enforcement of operational rules</h3>
+    <p class="decision__body">
+      UI-level guards aren't enough. Booking, closures, expired offers: every
+      state transition runs through a server-side check, written assuming a
+      hostile client.
+    </p>
+  </article>
+
+  <article class="decision">
+    <p class="decision__num mono">04</p>
+    <h3 class="decision__title">CI gates for the patterns that bite</h3>
+    <p class="decision__body">
+      <code>lint:tz</code> blocks any new code that treats day/month boundaries
+      in server time. <code>lint:adapter</code> catches JSONB columns being
+      read without the canonical adapter. Both rules were added the day after
+      the bug they prevent.
+    </p>
+  </article>
+</div>
 
 ## What I optimize for
 
-The product is on a budget — both money and design entropy. The constraints I
+The product is on a budget (both money and design entropy). The constraints I
 hold the line on, in order:
 
 1. **Mobile speed.** Core Web Vitals first. The home screen and booking flow

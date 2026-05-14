@@ -101,9 +101,10 @@ main:focus {
   gap: var(--space-3);
 }
 
-.theme-toggle {
-  width: 36px;
-  height: 36px;
+.theme-toggle,
+.nav-menu-toggle {
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-2);
   border: 1px solid var(--border-strong);
   color: var(--text);
@@ -114,14 +115,26 @@ main:focus {
     color var(--dur-fast) var(--ease);
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.nav-menu-toggle:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
 
-.theme-toggle svg {
+.theme-toggle svg,
+.nav-menu-toggle svg {
   width: 18px;
   height: 18px;
+}
+
+.nav-menu-toggle {
+  display: inline-flex;
+}
+
+@media (min-width: 720px) {
+  .nav-menu-toggle {
+    display: none;
+  }
 }
 
 [data-theme="dark"] .theme-toggle .icon-sun,
@@ -234,6 +247,210 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
+}
+
+// --- Drenched hero (committed emerald, full-bleed) ---
+// Same in both themes; the hero IS the brand surface.
+// Full-bleed: extends to viewport edges using the inset hack.
+.hero--drenched {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--space-7));
+  padding: var(--space-9) 0 var(--space-9);
+  // WCAG-tuned gradient: lightest #6ee7b7 (mint) to floor #059669.
+  // Pure-black text (#0a0a0a) on this entire range stays >= 4.5:1 contrast.
+  background:
+    radial-gradient(70% 90% at 15% 10%, #6ee7b7 0%, transparent 65%),
+    linear-gradient(160deg, #34d399 0%, #10b981 45%, #059669 100%);
+  color: #0a0a0a;
+  overflow: hidden;
+}
+
+@media (min-width: 720px) {
+  .hero--drenched {
+    padding: clamp(6rem, 10vw, 8rem) 0 clamp(5rem, 8vw, 7rem);
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .hero__inner {
+    padding: 0 var(--space-6);
+  }
+}
+
+.hero__available {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.35rem 0.85rem;
+  margin-bottom: var(--space-5);
+  border-radius: var(--radius-full);
+  background: rgba(10, 10, 10, 0.85);
+  color: #34d399;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  line-height: 1;
+}
+
+.hero__available__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
+}
+
+@include motion-safe {
+  .hero__available__dot {
+    animation: pulse 2s infinite var(--ease);
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.55); }
+  70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+.hero__greet {
+  display: block;
+  margin: 0 0 var(--space-3);
+  color: rgba(10, 10, 10, 0.88);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-mono);
+  text-transform: none;
+}
+
+.hero__title {
+  margin: 0 0 var(--space-5);
+  max-width: 16ch;
+  color: #0a0a0a;
+  font-size: clamp(3rem, 8.5vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+.hero__title-em {
+  display: block;
+  color: #0a0a0a;
+}
+
+.hero--drenched .hero__lead {
+  color: #0a0a0a;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  max-width: 54ch;
+  margin-bottom: var(--space-7);
+  line-height: 1.5;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  padding: var(--space-5) 0;
+  margin: 0 0 var(--space-7);
+  border-top: 1px solid rgba(10, 10, 10, 0.18);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.18);
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hero-stat__num {
+  margin: 0;
+  color: #0a0a0a;
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.hero-stat__suffix {
+  font-size: 0.45em;
+  margin-left: 0.25ch;
+  font-weight: 500;
+  color: rgba(10, 10, 10, 0.75);
+  letter-spacing: 0;
+}
+
+.hero-stat__label {
+  margin: 0;
+  color: rgba(10, 10, 10, 0.88);
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+  letter-spacing: var(--tracking-mono);
+  line-height: 1.3;
+  max-width: 22ch;
+}
+
+@media (max-width: 600px) {
+  .hero__stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .hero-stat {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-4);
+  }
+  .hero-stat__num {
+    font-size: var(--fs-2xl);
+    min-width: 2.5ch;
+  }
+}
+
+.hero--drenched .hero__ctas {
+  margin-top: 0;
+  gap: var(--space-3);
+}
+
+// --- Contact card ---
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+@media (min-width: 720px) {
+  .contact-card {
+    padding: var(--space-7);
+  }
+}
+
+.contact-card__lead {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: var(--fs-md);
+  max-width: 56ch;
+}
+
+.contact-card__meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
 }
 
 // --- Grid for project cards ---
@@ -350,4 +567,136 @@ section {
   margin-top: var(--space-7);
   padding-top: var(--space-5);
   border-top: 1px solid var(--border);
+}
+
+// --- Mobile nav drawer ---
+.nav-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear var(--dur-base), opacity var(--dur-base) var(--ease);
+}
+
+.nav-drawer[data-open="true"] {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear, opacity var(--dur-base) var(--ease);
+}
+
+.nav-drawer__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.nav-drawer__panel {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: var(--surface);
+  border-top-left-radius: var(--radius-5);
+  border-top-right-radius: var(--radius-5);
+  border-top: 1px solid var(--border);
+  padding: var(--space-5) var(--space-5) var(--space-6);
+  transform: translateY(110%);
+  transition: transform var(--dur-slow) var(--ease);
+  box-shadow: var(--shadow-2);
+}
+
+.nav-drawer[data-open="true"] .nav-drawer__panel {
+  transform: translateY(0);
+}
+
+.nav-drawer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-4);
+}
+
+.nav-drawer__title {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.nav-drawer__close {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-drawer__close svg {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-drawer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-drawer__list li {
+  margin: 0;
+}
+
+.nav-drawer__list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-3);
+  color: var(--text-strong);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  border: 0;
+  border-radius: var(--radius-2);
+}
+
+.nav-drawer__list a::after {
+  content: "→";
+  color: var(--muted-soft);
+  font-size: var(--fs-md);
+}
+
+.nav-drawer__list a:hover,
+.nav-drawer__list a:focus-visible {
+  background: var(--surface-elev);
+  color: var(--accent);
+}
+
+.nav-drawer__list a:hover::after,
+.nav-drawer__list a:focus-visible::after {
+  color: var(--accent);
+}
+
+.nav-drawer__foot {
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+}
+
+.nav-drawer__foot a {
+  color: var(--muted);
+  border: 0;
+}
+
+// Locks body scroll while drawer is open.
+body[data-drawer-open="true"] {
+  overflow: hidden;
 }

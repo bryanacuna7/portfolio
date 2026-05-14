@@ -46,6 +46,32 @@
   border-color: var(--border-strong);
 }
 
+// Inverted button for drenched (emerald) hero — dark fill on light surface.
+.button--invert {
+  background: #0a0a0a;
+  border-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.button--invert:hover {
+  background: transparent;
+  color: #0a0a0a;
+  border-color: #0a0a0a;
+}
+
+// Outlined for drenched hero — readable on emerald.
+.button--ghost-light {
+  background: transparent;
+  border-color: rgba(10, 10, 10, 0.35);
+  color: #0a0a0a;
+}
+
+.button--ghost-light:hover {
+  background: rgba(10, 10, 10, 0.08);
+  border-color: #0a0a0a;
+  color: #0a0a0a;
+}
+
 .button .arrow {
   display: inline-block;
   transition: transform var(--dur-fast) var(--ease);
@@ -277,40 +303,63 @@
   margin-bottom: var(--space-1);
 }
 
-// --- Skills grid ---
-.skills {
+// --- Services list (was: skills chip grid) ---
+.services {
   display: grid;
   gap: var(--space-5);
   grid-template-columns: 1fr;
 }
 
 @media (min-width: 720px) {
-  .skills {
-    grid-template-columns: repeat(3, 1fr);
+  .services {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6) var(--space-7);
   }
 }
 
-.skill-group {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-3);
-  padding: var(--space-5);
+.service {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 var(--space-4);
+  align-items: baseline;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
 }
 
-.skill-group h3 {
-  margin-top: 0;
-  margin-bottom: var(--space-4);
-  font-size: var(--fs-md);
-  font-family: var(--font-mono);
-  letter-spacing: 0;
-  color: var(--muted);
-  text-transform: uppercase;
-  font-size: var(--fs-xs);
-  letter-spacing: var(--tracking-wide);
-}
-
-.skill-group ul.chip-list li {
+.service__num {
+  color: var(--accent);
   font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  padding-top: 0.2em;
+  margin: 0;
+}
+
+.service__title {
+  grid-column: 2;
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-lg);
+  color: var(--text-strong);
+  letter-spacing: var(--tracking-tight);
+}
+
+.service__body {
+  grid-column: 2;
+  margin: 0 0 var(--space-3);
+  color: var(--muted);
+  font-size: var(--fs-base);
+  line-height: var(--lh-snug);
+  max-width: 60ch;
+}
+
+.service__stack {
+  grid-column: 2;
+  margin: 0;
+  color: var(--accent);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-mono);
+  line-height: 1.6;
+  word-spacing: 0.1em;
 }
 
 // --- Experience list ---
@@ -350,7 +399,7 @@
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   letter-spacing: var(--tracking-wide);
-  color: var(--muted-soft);
+  color: var(--muted);
 }
 
 .exp-item ul {
@@ -424,7 +473,7 @@
 .cs-toc h2 {
   font-size: var(--fs-xs);
   margin: 0 0 var(--space-3);
-  color: var(--muted-soft);
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
 }
@@ -456,4 +505,64 @@
 
 .cs-toc a:hover {
   color: var(--accent);
+}
+
+// --- Case study decision callouts ---
+.decisions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
+}
+
+@media (min-width: 720px) {
+  .decisions {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4) var(--space-5);
+  }
+}
+
+.decision {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-4);
+  align-items: baseline;
+  padding: var(--space-5);
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: var(--radius-3);
+}
+
+.decision__num {
+  color: var(--accent);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  margin: 0;
+}
+
+.decision__title {
+  grid-column: 2;
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-md);
+  color: var(--text-strong);
+  letter-spacing: var(--tracking-tight);
+}
+
+.decision__body {
+  grid-column: 2;
+  margin: 0;
+  color: var(--text);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+  max-width: none;
+}
+
+.decision__body code {
+  background: rgba(0, 0, 0, 0.18);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+[data-theme="light"] .decision__body code {
+  background: rgba(255, 255, 255, 0.5);
 }

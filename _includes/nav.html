@@ -1,21 +1,13 @@
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="{{ '/' | relative_url }}" aria-label="Home — Bryan Acuña">BA</a>
+    <a class="logo" href="{{ '/' | relative_url }}" aria-label="Home, Bryan Acuña">BA</a>
 
     <nav class="nav-primary" aria-label="Primary">
       <ul class="nav-list">
-        <li>
-          <a class="nav-link" href="{{ '/#work' | relative_url }}">Work</a>
-        </li>
-        <li>
-          <a class="nav-link" href="{{ '/#about' | relative_url }}">About</a>
-        </li>
-        <li>
-          <a class="nav-link" href="{{ '/#experience' | relative_url }}">Experience</a>
-        </li>
-        <li>
-          <a class="nav-link" href="{{ '/#contact' | relative_url }}">Contact</a>
-        </li>
+        <li><a class="nav-link" href="{{ '/#work' | relative_url }}">Work</a></li>
+        <li><a class="nav-link" href="{{ '/#about' | relative_url }}">About</a></li>
+        <li><a class="nav-link" href="{{ '/#experience' | relative_url }}">Experience</a></li>
+        <li><a class="nav-link" href="{{ '/#contact' | relative_url }}">Contact</a></li>
       </ul>
     </nav>
 
@@ -36,6 +28,51 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
       </button>
+
+      <button
+        type="button"
+        class="nav-menu-toggle"
+        data-nav-toggle
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-drawer"
+      >
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="8" x2="20" y2="8"/>
+          <line x1="4" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+
+<!-- Mobile drawer (hidden on ≥720px via CSS) -->
+<div
+  id="nav-drawer"
+  class="nav-drawer"
+  data-nav-drawer
+  aria-hidden="true"
+>
+  <div class="nav-drawer__backdrop" data-nav-close></div>
+  <div class="nav-drawer__panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+    <div class="nav-drawer__head">
+      <span class="nav-drawer__title mono">Menu</span>
+      <button type="button" class="nav-drawer__close" data-nav-close aria-label="Close menu">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="6" y1="6" x2="18" y2="18"/>
+          <line x1="18" y1="6" x2="6" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="nav-drawer__list">
+      <li><a href="{{ '/#work' | relative_url }}" data-nav-close>Work</a></li>
+      <li><a href="{{ '/#about' | relative_url }}" data-nav-close>About</a></li>
+      <li><a href="{{ '/#experience' | relative_url }}" data-nav-close>Experience</a></li>
+      <li><a href="{{ '/#contact' | relative_url }}" data-nav-close>Contact</a></li>
+      <li><a href="{{ '/case-studies/barberapp/' | relative_url }}" data-nav-close>Nexo Barber case study</a></li>
+    </ul>
+    <div class="nav-drawer__foot">
+      <a href="mailto:bryn.acuna7@gmail.com" data-nav-close>bryn.acuna7@gmail.com</a>
+    </div>
+  </div>
+</div>

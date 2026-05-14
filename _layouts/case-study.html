@@ -45,11 +45,24 @@ layout: default
     {% endif %}
   </header>
 
-  <div class="cs-body">
-    {{ content }}
+  <div class="cs-layout">
+    <div class="cs-body">
+      {{ content }}
 
-    <p class="cs-back">
-      <a class="button" href="{{ '/' | relative_url }}">← All projects</a>
-    </p>
+      <p class="cs-back">
+        <a class="button" href="{{ '/' | relative_url }}">← All projects</a>
+      </p>
+    </div>
+
+    {% if page.toc %}
+      <aside class="cs-toc" aria-labelledby="cs-toc-label">
+        <h2 id="cs-toc-label">On this page</h2>
+        <ol>
+          {% for entry in page.toc %}
+            <li><a href="#{{ entry.id }}">{{ entry.label }}</a></li>
+          {% endfor %}
+        </ol>
+      </aside>
+    {% endif %}
   </div>
 </article>

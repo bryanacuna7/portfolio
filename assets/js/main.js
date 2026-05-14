@@ -79,9 +79,52 @@
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
+  function initDrawer() {
+    var drawer = document.querySelector("[data-nav-drawer]");
+    var openBtn = document.querySelector("[data-nav-toggle]");
+    if (!drawer || !openBtn) return;
+
+    var lastFocus = null;
+
+    function openDrawer() {
+      lastFocus = document.activeElement;
+      drawer.setAttribute("data-open", "true");
+      drawer.setAttribute("aria-hidden", "false");
+      openBtn.setAttribute("aria-expanded", "true");
+      document.body.setAttribute("data-drawer-open", "true");
+      var firstLink = drawer.querySelector(".nav-drawer__list a");
+      if (firstLink) firstLink.focus();
+    }
+
+    function closeDrawer() {
+      drawer.removeAttribute("data-open");
+      drawer.setAttribute("aria-hidden", "true");
+      openBtn.setAttribute("aria-expanded", "false");
+      document.body.removeAttribute("data-drawer-open");
+      if (lastFocus && typeof lastFocus.focus === "function") {
+        lastFocus.focus();
+      }
+    }
+
+    openBtn.addEventListener("click", openDrawer);
+    drawer.querySelectorAll("[data-nav-close]").forEach(function (el) {
+      el.addEventListener("click", closeDrawer);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && drawer.getAttribute("data-open") === "true") {
+        closeDrawer();
+      }
+    });
+  }
+
+  function bootAll() {
     init();
+    initDrawer();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootAll);
+  } else {
+    bootAll();
   }
 })();
