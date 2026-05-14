@@ -303,6 +303,143 @@
   margin-bottom: var(--space-1);
 }
 
+// --- Scroll-reveal entry animation ---
+// Sections lift 20px and fade. Triggered by intersection observer
+// (adds data-revealed="true"). Reduced motion shows immediately.
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  will-change: opacity, transform;
+}
+
+[data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+// --- Marquee strip below hero ---
+.marquee {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-4) 0;
+  background: var(--surface);
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee__track {
+  display: flex;
+  align-items: center;
+  gap: var(--space-7);
+  width: max-content;
+  animation: marquee-scroll 38s linear infinite;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  letter-spacing: var(--tracking-mono);
+  white-space: nowrap;
+}
+
+.marquee__item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+// --- Magnetic CTA buttons (subtle hover transform) ---
+// JS supplies --mx / --my custom props on pointermove inside .magnetic.
+.magnetic {
+  transition: transform 0.18s var(--ease);
+  transform: translate(calc(var(--mx, 0) * 1px), calc(var(--my, 0) * 1px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .magnetic {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+// --- Custom cursor follower for project cards ---
+// Desktop only. Shows a "View" pill when hovering inside .card.
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  pointer-events: none;
+  background: var(--text-strong);
+  color: var(--bg);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  font-weight: 600;
+  opacity: 0;
+  transform: translate3d(var(--cursor-x, 0), var(--cursor-y, 0), 0) translate(-50%, -50%) scale(0.7);
+  transition: opacity 0.18s var(--ease), scale 0.22s var(--ease);
+  will-change: transform, opacity, scale;
+}
+
+.cursor-follower[data-visible="true"] {
+  opacity: 1;
+  scale: 1;
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .cursor-follower {
+    display: none !important;
+  }
+}
+
+// --- Stat counter: shimmer-in when counter starts ---
+.hero-stat__num[data-counter] {
+  font-variant-numeric: tabular-nums;
+}
+
 // --- Services list (was: skills chip grid) ---
 .services {
   display: grid;
