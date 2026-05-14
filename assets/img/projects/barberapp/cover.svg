@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#0f1a14"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1c1c1f" stroke-width="1" opacity="0.7">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+  </g>
+
+  <!-- Mobile mock frames -->
+  <g transform="translate(140, 110)">
+    <rect width="280" height="500" rx="36" fill="#141414" stroke="#262626"/>
+    <rect x="22" y="40" width="236" height="6" rx="3" fill="#26272a"/>
+    <rect x="22" y="64" width="160" height="22" rx="6" fill="#3a3a3a"/>
+    <rect x="22" y="104" width="236" height="80" rx="14" fill="#0a0a0a" stroke="#262626"/>
+    <rect x="22" y="200" width="236" height="80" rx="14" fill="#0a0a0a" stroke="#262626"/>
+    <rect x="22" y="296" width="236" height="80" rx="14" fill="url(#emerald)"/>
+    <rect x="22" y="392" width="236" height="80" rx="14" fill="#0a0a0a" stroke="#262626"/>
+  </g>
+
+  <g transform="translate(450, 80)">
+    <rect width="280" height="540" rx="36" fill="#141414" stroke="#262626"/>
+    <circle cx="140" cy="180" r="60" fill="none" stroke="url(#emerald)" stroke-width="4"/>
+    <text x="140" y="190" text-anchor="middle"
+          font-family="-apple-system, system-ui, sans-serif"
+          font-size="28" font-weight="700"
+          fill="#ededed">2:34</text>
+    <text x="140" y="280"
+          text-anchor="middle"
+          font-family="-apple-system, system-ui, sans-serif"
+          font-size="14"
+          fill="#a3a3a3">3 ahead of you</text>
+    <rect x="22" y="340" width="236" height="44" rx="10" fill="#1c1c1f"/>
+    <rect x="22" y="400" width="236" height="44" rx="10" fill="#1c1c1f"/>
+  </g>
+
+  <g transform="translate(760, 110)">
+    <rect width="380" height="500" rx="20" fill="#141414" stroke="#262626"/>
+    <rect x="24" y="30" width="160" height="22" rx="6" fill="#3a3a3a"/>
+    <rect x="24" y="70" width="100" height="14" rx="4" fill="#26272a"/>
+    <rect x="24" y="110" width="332" height="80" rx="12" fill="url(#emerald)"/>
+    <text x="44" y="146" font-family="-apple-system, system-ui, sans-serif" font-size="13" fill="#0a0a0a" font-weight="600">CITAS HOY</text>
+    <text x="44" y="174" font-family="-apple-system, system-ui, sans-serif" font-size="28" fill="#0a0a0a" font-weight="700">12</text>
+    <rect x="24" y="210" width="156" height="80" rx="12" fill="#0a0a0a" stroke="#262626"/>
+    <rect x="200" y="210" width="156" height="80" rx="12" fill="#0a0a0a" stroke="#262626"/>
+    <rect x="24" y="310" width="332" height="60" rx="12" fill="#0a0a0a" stroke="#262626"/>
+    <rect x="24" y="390" width="332" height="60" rx="12" fill="#0a0a0a" stroke="#262626"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="100" y="660"
+        font-family="ui-monospace, 'JetBrains Mono', monospace"
+        font-size="22" font-weight="500"
+        fill="#a3a3a3" letter-spacing="3">
+    NEXO BARBER · BARBERAPP.NEXOCR.PRO
+  </text>
+</svg>

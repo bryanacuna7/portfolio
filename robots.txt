@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bryanacuna7.github.io/portfolio/sitemap.xml

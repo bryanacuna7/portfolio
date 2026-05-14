@@ -1,0 +1,146 @@
+// Type system.
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--space-3);
+  color: var(--text-strong);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-5xl);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: var(--fs-3xl);
+  margin-top: var(--space-8);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: var(--fs-xl);
+  margin-top: var(--space-6);
+  letter-spacing: -0.015em;
+}
+
+h4 {
+  font-size: var(--fs-md);
+  margin-top: var(--space-5);
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  max-width: var(--max-text);
+  text-wrap: pretty;
+}
+
+p.lead {
+  font-size: var(--fs-lg);
+  color: var(--muted);
+  line-height: var(--lh-snug);
+  max-width: 56ch;
+}
+
+ul, ol {
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-5);
+}
+
+ul ul, ol ol {
+  margin-bottom: 0;
+}
+
+li {
+  margin: var(--space-2) 0;
+  max-width: var(--max-text);
+}
+
+li::marker {
+  color: var(--muted-soft);
+}
+
+strong {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--surface);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-1);
+  border: 1px solid var(--border);
+  letter-spacing: var(--tracking-mono);
+}
+
+pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-3);
+  padding: var(--space-5);
+  overflow-x: auto;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
+
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: var(--space-5) 0;
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--muted-soft);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: var(--tracking-mono);
+  font-size: 0.95em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+a:not(.button):not(.card):not(.chip):not(.nav-link):not(.logo) {
+  color: var(--text-strong);
+  border-bottom: 1px solid var(--border-strong);
+}
+
+a:not(.button):not(.card):not(.chip):not(.nav-link):not(.logo):hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}

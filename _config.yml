@@ -1,6 +1,43 @@
-title: Bryan Acuña
-logo: assets/img/profile.png
-#description: Data Analyst
-#show_downloads: true
-theme: jekyll-theme-minimal
+title: "Bryan Acuña — Data analyst & SaaS builder"
+description: "Underwriting supervisor, data analyst, and full-stack builder behind Nexo Barber. 9 years in fintech, currently shipping a multi-tenant SaaS for barbershops."
+author:
+  name: "Bryan Acuña Astúa"
+  email: bryn.acuna7@gmail.com
+url: "https://bryanacuna7.github.io"
+baseurl: "/portfolio"
+permalink: /:path/
 
+lang: en
+encoding: UTF-8
+timezone: America/Costa_Rica
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Apply case-study layout to every file under /case-studies/.
+defaults:
+  - scope:
+      path: "case-studies"
+      type: pages
+    values:
+      layout: case-study
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "All Projects.md"
+  - vendor
+  - node_modules
+
+# Social meta consumed by jekyll-seo-tag.
+image: /assets/img/og-default.png
+twitter:
+  username: bryanacuna7
+  card: summary_large_image
+social:
+  name: Bryan Acuña Astúa
+  links:
+    - https://github.com/bryanacuna7
+    - https://www.linkedin.com/in/bryan-acu%C3%B1a-as12b7/
